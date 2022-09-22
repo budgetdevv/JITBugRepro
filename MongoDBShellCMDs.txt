@@ -1,0 +1,8 @@
+//Batch add Int64 field to collection
+db.(Collection Name).updateMany({},{$set: {"SelfIntroMsgID":NumberLong(0)}},false,true)
+
+//Batch add Date field to collection
+db.Profile.updateMany({},{$set: {"BDayDate":new Date(0)}},false,true)
+
+//Batch delete field to collection
+db.(Collection Name).updateMany({}, {$unset: {"(FieldName)": ""}})
