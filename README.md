@@ -2,7 +2,6 @@
 Segfaults on Ubuntu ARM64, works fine on my Windows X64 machine
 
 __**Runtime**__
-
 .NET 7 RC 1
 
 __**Suspects**__
