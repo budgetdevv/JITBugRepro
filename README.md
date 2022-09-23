@@ -12,3 +12,5 @@ __**Suspects**__
 - `Services.GetRequiredService<InvitesModule>().OnReady()` contains a foreach loop that writes into a `NonBlocking.ConcurrentDictionary`. The write happens after an `await`, which might also be responsible for the weird behavior
 
 - This bug seems to be caused by tiered compilation ( GDB mentioned TC and threadpool thread )
+
+This is now a live issue @ https://github.com/dotnet/runtime/issues/76051
